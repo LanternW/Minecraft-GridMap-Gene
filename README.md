@@ -32,7 +32,20 @@
   在ubuntu下的配置步骤相同，操作有一定区别，我没有在ubuntu实践过，就不做说明了。
   
   ### 2. Ego-planner 的修改
+  修改的文件在需要修改4个地方：
   
+  #### 1. uav_simulator/mockamap/include/map.hpp:
+  在Map类的private成员中新增了一个地图生成函数 (第44行)
+    void mcMapGenerate();
+    
+  #### 2. uav_simulator/mockamap/src/map.cpp:
+  mcMapGenerate() 函数的实现。第16 ~ 73行实现了mcMapGenerate 函数，即从外部文件读取地图，转化为点云。第777 ~ 780行添加了这个函数的接口。
+  
+  #### 3. uav_simulator/mockamap/launch/mockamap.launch:
+  第16行将此参数改为5 ，则使用mcMapGenerate() 为地图生成方式。
+  
+  #### 4. planner/plan_env/src/grid_map.cpp:
+  第757行，将 inf_step_z = 1; 改为 inf_step_z = inf_step; 这样生成的障碍物厚度就正常了。
   
   
 ## 使用方法：
