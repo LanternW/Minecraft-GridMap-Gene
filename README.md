@@ -36,7 +36,7 @@
   在ubuntu下的配置步骤相同，操作有一定区别，我没有在ubuntu实践过，就不做说明了。
   
   ### 2. Ego-planner 的修改
-  修改的文件在需要修改4个地方：
+  修改的文件在需要修改4个地方, code中提供了一个修改过的ego-planner可以参考：
   
   #### 1. uav_simulator/mockamap/include/map.hpp:
   在Map类的private成员中新增了一个地图生成函数 (第44行)
