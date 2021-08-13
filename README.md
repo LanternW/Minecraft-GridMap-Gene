@@ -28,6 +28,10 @@
   安装完毕后，先不要启动，找到 __运行路径__ 下的mods文件夹，将 mapGene.jar 拖入其中。
   
   随后便可以运行游戏。
+  
+  启动后，点击Mods按钮，若能找到Example Mod，则安装正确。
+  ![image](https://user-images.githubusercontent.com/21134117/129301957-e74c03d4-b41e-449b-bf7a-fe942b82a766.png)
+
  
   在ubuntu下的配置步骤相同，操作有一定区别，我没有在ubuntu实践过，就不做说明了。
   
@@ -51,6 +55,25 @@
   
   
 ## 使用方法：
+  
+   进入游戏，按t打开聊天框，输入指令 /give @a examplemod:magic_block_item 获得一个magic block
+   
+   将其放置在要框选部分的体对角线两个端点处，可参考下图，黑紫相间的方块就是放置的magic block
+   ![image](https://user-images.githubusercontent.com/21134117/129302134-9c99f3b5-3753-4ba0-9e6e-db6a2a1bea93.png)
+    
+    
+   依次破坏这两个方块，破坏时，聊天框会弹出对应提示，如下图所示：
+   ![image](https://user-images.githubusercontent.com/21134117/129302221-11392c51-638c-4861-8bfd-7912ce139a3b.png)
+   
+   随后，在 __运行路径__ 会多出一个map.txt文件。 将其移动到 ego_planner 目录下（具体 uav_simulator/mockamap/src/map.cpp 第22行指定的位置）
+   
+   编译，运行 ego-planner , 在rviz中调节点云size 和resolution一致，即可得到对应地图：
+   
+   ![image](https://user-images.githubusercontent.com/21134117/129302458-63540c58-fbb0-495d-9e11-e9466d2f9922.png)
+  
+    坐标系关系：minecraft 中的x-y-z 轴，对应rviz 中 x - z - (-y) 
+
+  
   
 
   
