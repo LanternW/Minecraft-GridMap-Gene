@@ -36,7 +36,9 @@
   
   #### 1. uav_simulator/mockamap/include/map.hpp:
   在Map类的private成员中新增了一个地图生成函数 (第44行)
-    void mcMapGenerate();
+  void mcMapGenerate();
+  
+  __注意:第22行文件路径需要自己改一下__
     
   #### 2. uav_simulator/mockamap/src/map.cpp:
   mcMapGenerate() 函数的实现。第16 ~ 73行实现了mcMapGenerate 函数，即从外部文件读取地图，转化为点云。第777 ~ 780行添加了这个函数的接口。
