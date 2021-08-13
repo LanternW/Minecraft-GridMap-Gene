@@ -72,6 +72,9 @@
    ![image](https://user-images.githubusercontent.com/21134117/129302458-63540c58-fbb0-495d-9e11-e9466d2f9922.png)
   
     坐标系关系：minecraft 中的x-y-z 轴，对应rviz 中 x - z - (-y) 
+    
+    
+   已知bug: 如果框选的地图太大，导入rviz会变形，可能是ego-planner的某些参数原因？目前建议框选的地图不要太大。
 
   
   
