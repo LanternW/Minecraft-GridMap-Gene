@@ -77,7 +77,8 @@
     
 ## 效果参考
     
-    ![21B23629BE79179E6EAD973BE4899331](https://user-images.githubusercontent.com/21134117/130894019-28a3a33b-f12e-42fe-b6a3-a7d6f27ed2b7.png)
+   ![QQ图片20210826110806](https://user-images.githubusercontent.com/21134117/130894170-bf943773-215a-493f-bcc9-31a2f214b364.jpg)
+
     
     可配合worldEdit快速搭建几何地图
 
