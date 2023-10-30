@@ -1,3 +1,4 @@
+建议使用新的工具：[投影转pcd点云](https://github.com/LanternW/LitematicaToPcd)
 # Minecraft-GridMap-Gene
 
 ## 工作原理：
